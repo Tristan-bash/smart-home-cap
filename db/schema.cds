@@ -13,7 +13,8 @@ entity Lights : cuid, managed {
   intensity: Integer;
 }
 
-entity Shutter : cuid, managed {
+@fiori.draft.enabled
+entity Shutters : cuid, managed {
 
   direction: String(1) not null;
   percentageOpend: Integer not null;
