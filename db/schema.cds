@@ -18,7 +18,7 @@ entity Lights : cuid, managed {
 entity Shutters : cuid, managed {
   
   name: String(255) not null;
-  direction: String(1) not null;
+  direction: String(255) not null;
   percentageOpend: Integer not null;
 
 }
