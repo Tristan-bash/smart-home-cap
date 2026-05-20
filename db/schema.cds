@@ -1,0 +1,20 @@
+using {
+  cuid,
+  managed,
+  //sap.common.CodeList as CodeList
+} from '@sap/cds/common';
+
+
+@fiori.draft.enabled
+entity Lights : cuid, managed {
+
+  isOn: Boolean not null;
+  isDimmer: Boolean not null;
+  intensity: Integer;
+}
+
+entity Shutter : cuid, managed {
+
+  direction: String(1) not null;
+  percentageOpend: Integer not null;
+}
