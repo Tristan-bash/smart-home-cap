@@ -8,6 +8,7 @@ using {
 @fiori.draft.enabled
 entity Lights : cuid, managed {
 
+  name: String(255) not null;
   isOn: Boolean not null;
   isDimmer: Boolean not null;
   intensity: Integer;
@@ -15,7 +16,9 @@ entity Lights : cuid, managed {
 
 @fiori.draft.enabled
 entity Shutters : cuid, managed {
-
+  
+  name: String(255) not null;
   direction: String(1) not null;
   percentageOpend: Integer not null;
+
 }
